@@ -1,21 +1,26 @@
-/* test commit */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: brown;
     background-color: antiquewhite;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50%;
+   
 }
 
 
-.section {
+.box {
     background-color: antiquewhite;
-    padding: 20px;
-    margin-left: 580px;
+    padding: 40px;
+    margin: 30px auto;
     color: #333;
-    justify-content: center;
-    width: 300px;
-    border: 5px solid green;
-    box-sizing: content-box;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 10px rgb(red, green, blue);
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 form {
@@ -25,7 +30,7 @@ form {
 }
 label {
     color: blueviolet;
-    align-self: flex-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 input[type="date"] {
@@ -40,13 +45,20 @@ input[type="date"] {
 
 button {
     margin-top: 10px;
-    padding: 10px 10px;
+    padding: 10px;
     background-color: rgb(red, green, blue);
-    border: 10px 10px;
-    border-radius: 20px;
-    font-size: 35px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 button:hover {
-    background-color: blueviolet;
+    background-color: rgb(124, 244, 192);
+}
+
+#akanName {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #a6a4af;
 }

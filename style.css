@@ -23,11 +23,9 @@ form {
     flex-direction: column;
     gap: 10px;
 }
-
 label {
     color: blueviolet;
     align-self: flex-start;
-   
 }
 
 input[type="date"] {

@@ -38,14 +38,13 @@ input[type="date"] {
     margin-right: 5px;
  }
 
- button {
-  margin-top: 10px;
-  padding: 10px 10px;
-  background-color:rgb(239, 244, 239);
-  border: 10px 10px;
-  border-radius: 20px;
-  font-size: 35px;
-  
+button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: rgb(red, green, blue);
+    border: 10px 10px;
+    border-radius: 20px;
+    font-size: 35px;
 }
 
 button:hover {

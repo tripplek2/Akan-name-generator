@@ -29,8 +29,9 @@ let [year, month, day] = dateOfBirth.split("-").map(Number);
 
 let d = ((4 * CC - 2 * (CC - 1)) + 45 * YY + 1026 * (MM + 1) + DD) % 7;
 
-let dayIndex = d % 7;
-if (dayIndex < 0) dayIndex += 7;
+
+    let dayIndex = (d + 4) % 7;
+
 
 let akanName;
 

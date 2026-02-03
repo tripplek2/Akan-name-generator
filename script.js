@@ -1,10 +1,11 @@
-//Elements
 function getAkanName() {
+// Arrays
+    
 const days= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const MaleNames= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 const FemaleNames= ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-//Main functions
+
 //Getting user input
 const dateOfBirth= document.getElementById("dateOfBirth").value;
 const genderInput = document.querySelector('input[name="gender"]:checked');
@@ -17,11 +18,13 @@ if (!dateOfBirth || !genderInput) {
 
 let [year, month, day] = dateOfBirth.split("-").map(Number);
 
+// Adjusting Jan and Feb
  if (month < 3) {
         month += 12;
         year -= 1;
     }
 
+// Applying the formula
     const CC = Math.floor(year / 100);
     const YY = year % 100;
     const MM = month;
@@ -29,10 +32,10 @@ let [year, month, day] = dateOfBirth.split("-").map(Number);
 
 let d = ((4 * CC - 2 * (CC - 1)) + 45 * YY + 1026 * (MM + 1) + DD) % 7;
 
+// Mapping
+let dayIndex = (d + 4) % 7;
 
-    let dayIndex = (d + 4) % 7;
-
-
+// Akan name selection based on gender
 let akanName;
 
 if(genderInput.value === "male") {
@@ -42,12 +45,13 @@ else {
     akanName= FemaleNames[dayIndex];
  }   
 
-
+// Result display
 document.getElementById("akanName").innerText =
         `You were born on a ${days[dayIndex]}. Your Akan name is ${akanName}.`;
 
 }
 
+// Event listener
 document.getElementById("akanForm")
 .addEventListener("submit", function (event) {
     event.preventDefault();

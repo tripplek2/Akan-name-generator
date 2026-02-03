@@ -8,6 +8,9 @@ style.css-styling my project.
 script.js-applying the logic behind getting the Akan name.
 README.md-provides information about my project
 
+# Author
+Kelvin Korir
+
 
 ## Installation
 
@@ -22,5 +25,6 @@ README.md-provides information about my project
 ## Contacts 
 Email:[kelvin.korir1@student.moringaschool.com] 
 
-
+## License
+Distributed under MIT license.
 

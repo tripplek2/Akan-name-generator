@@ -6,7 +6,7 @@ const FemaleNames= ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
 //Main functions
 //Getting user input
-const dateOfBirth= document.getElementById("dateofbirth").value;
+const dateOfBirth= document.getElementById("dateOfBirth").value;
 const genderInput = document.querySelector('input[name="gender"]:checked');
 
 
@@ -43,9 +43,13 @@ else {
 
 
 document.getElementById("akanName").innerText =
-    `You were born on a ${days[dayIndex]}. Your Akan name is ${akanName}.`;
+        `You were born on a ${days[dayIndex]}. Your Akan name is ${akanName}.`;
 
 }
 
-document.getElementById("getbutton")
-    .addEventListener("click", getAkanName);
+document.getElementById("akanForm")
+.addEventListener("submit", function (event) {
+    event.preventDefault();
+    getAkanName();
+
+});

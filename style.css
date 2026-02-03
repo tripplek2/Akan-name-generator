@@ -2,7 +2,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: brown;
-    background-color: antiquewhite;
+    background-color:antiquewhite;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -12,7 +12,7 @@ body {
 
 
 .box {
-    background-color: antiquewhite;
+    background-color:burlywood;
     padding: 40px;
     margin: 30px auto;
     color: #333;
@@ -60,5 +60,5 @@ button:hover {
   margin-top: 15px;
   text-align: center;
   font-weight: bold;
-  color: #a6a4af;
+  color: #261d4b;
 }

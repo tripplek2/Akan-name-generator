@@ -11,17 +11,18 @@
     
     <p>
         <h1>AkanName Generator</h1>
-        This is an AKan name generator that enables a user to enter different data to get the date someone was born including their gender to find out their Akan name.
+        This is an Akan name generator that enables a user to enter different data to get the date someone was born including their gender to find out their Akan name.
     </p>
 
-    <form>
-        <label for="date of birth">Date of birth</label>
-        <input type="date" id="date of birth" name="date of birth" placeholder="enter your date">
+    <form id="akanForm">
+        <label for="dateOfBirth">Date of birth</label>
+        <input type="date" id="dateOfBirth" required>
 
     <div id="Gender">
-        <label for="Gender">Gender</label>
-        <input type="radio" name="gender" value="gender" required>Male
-        <input type="radio" name="gender" value="gender" required>Female
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"required>Male
+        <input type="radio" name="gender" value="female" required>Female 
+        
     </div>
 
      <button type="submit">Get AkanName</button>
